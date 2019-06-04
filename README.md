@@ -22,3 +22,15 @@ End of yarns
 ```
 $ yarn-recursive --cmd upgrade --opt <package-name>
 ```
+
+### Hidden Directories
+
+By default, yarn-recursive will not search inside hidden directories (directories with names that
+start with a dot, for example `.git`).
+
+If you want to include hidden directories in the search, specify the `--includeHidden` option, for
+example:
+
+```
+$ yarn-recursive --includeHidden
+```
